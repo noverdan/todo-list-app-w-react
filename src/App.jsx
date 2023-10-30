@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import Navigation from './components/navigation/Navigation'
 import MainContent from './components/main/MainContent'
 import { DataProvider } from './context/DataProvider'
-import Popup from './components/dialog/popup'
-import Warning from './components/dialog/Warning'
+import Popup from './components/dialog/Popup'
 
 function App() {
 

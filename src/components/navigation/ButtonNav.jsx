@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Popup from '../dialog/popup';
 import { DataContext } from '../../context/DataProvider';
 
 function ButtonNav(props) {
