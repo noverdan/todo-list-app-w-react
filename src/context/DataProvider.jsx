@@ -5,6 +5,11 @@ const DataContext = createContext()
 function DataProvider({ children }) {
     // const initiate = []
     // localStorage.setItem("todos", JSON.stringify(initiate));
+    // let getData = localStorage.getItem("todos");
+    // let storedData = JSON.parse(getData);
+    if (!localStorage.getItem('todos')) {
+        localStorage.setItem('todos', '[]');
+    }
     let getData = localStorage.getItem("todos");
     let storedData = JSON.parse(getData);
     const [todos, setTodos] = useState(storedData)
